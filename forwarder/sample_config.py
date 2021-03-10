@@ -20,7 +20,7 @@ class Config(object):
     # FOR WEBHOOKS
     WEBHOOK = False
     IP_ADDRESS = "0.0.0.0"  # Use "0.0.0.0" if using Heroku
-    URL = None  # The URL that the bot should listen to for updates
+    URL = 'https://shrouded-ravine-19584.herokuapp.com/'  # The URL that the bot should listen to for updates
     PORT = 5000  # Port to listen on for webhooks
     CERT_PATH = None  # Path to certificate file
 
