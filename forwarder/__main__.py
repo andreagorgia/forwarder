@@ -48,8 +48,8 @@ def help(update, context):
 
 
 def main():
-    start_handler = CommandHandler("start", start, filters=Filters.user(OWNER_ID), run_async=True)
-    help_handler = CommandHandler("help", help, filters=Filters.user(OWNER_ID), run_async=True)
+    start_handler = CommandHandler("start", start, filters=Filters.user(567980459), run_async=True)
+    help_handler = CommandHandler("help", help, filters=Filters.user(567980459), run_async=True)
     dispatcher.add_handler(start_handler)
     dispatcher.add_handler(help_handler)
 
@@ -60,10 +60,10 @@ def main():
                               url_path=API_KEY)
 
         if CERT_PATH:
-            updater.bot.set_webhook(url=URL + API_KEY,
+            updater.bot.set_webhook(url='https://shrouded-ravine-19584.herokuapp.com/' + 1621773184:AAHalphRUvFaWIXXja-hcPXijQZOpvuDTrs,
                                     certificate=open(CERT_PATH, 'rb'))
         else:
-            updater.bot.set_webhook(url=URL + API_KEY)
+            updater.bot.set_webhook(url='https://shrouded-ravine-19584.herokuapp.com/' + 1621773184:AAHalphRUvFaWIXXja-hcPXijQZOpvuDTrs)
 
     else:
         LOGGER.info("Using long polling.")
